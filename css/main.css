@@ -13,9 +13,9 @@ html{
   scroll-behavior: smooth;
 }
 *{
-  box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body{
   font-family: "Work Sans" , sans-serif;
@@ -351,6 +351,7 @@ body{
     right: -25px;
     top: 257px;
   }
+
 }
 .about-content .image img {
   width: 100%;
@@ -394,9 +395,23 @@ body{
   font-size: 25px;
   font-weight: bold;
 }
+@media (max-width:767px) {
+  .contact .info a:first-of-type{
+    font-size: 17px;
+  }
+  .contact .info p:first-of-type{
+    font-size: 21px;
+  }
+}
 .contact .side-info{
   margin-top: 10px;
   font-size: 18px;
+}
+@media (max-width:767px) {
+  .contact .side-info{
+    font-size: 14px;
+  }
+  
 }
 .contact .side-info i{
   color: var(--side-text-color);
